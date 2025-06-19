@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 package proyectoventas;
+
 import java.awt.Color;
 
 /**
  *
- * @author crisu
+ * @author david
  */
 public class MenuVentas extends javax.swing.JFrame {
 
@@ -17,93 +18,70 @@ public class MenuVentas extends javax.swing.JFrame {
      */
     public MenuVentas() {
         initComponents();
-          setLocationRelativeTo(null);
-    
-    
-    
-    
+        setLocationRelativeTo(null);
 
-        
-            txtNombreProducto.setText("Ingrese el nombre del producto...");
+        txtNombreProducto.setText("Ingrese el nombre del producto...");
         txtNombreProducto.setForeground(Color.GRAY);
-
         txtNombreProducto.addFocusListener(new java.awt.event.FocusAdapter() {
-    @Override
-    public void focusGained(java.awt.event.FocusEvent evt) {
-        if (txtNombreProducto.getText().equals("Ingrese el nombre del producto...")) {
-            txtNombreProducto.setText("");
-            txtNombreProducto.setForeground(Color.BLACK);
-        }
-    }
+            @Override
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                if (txtNombreProducto.getText().equals("Ingrese el nombre del producto...")) {
+                    txtNombreProducto.setText("");
+                    txtNombreProducto.setForeground(Color.BLACK);
+                }
+            }
 
-    @Override
-    public void focusLost(java.awt.event.FocusEvent evt) {
-        if (txtNombreProducto.getText().trim().isEmpty()) {
-            txtNombreProducto.setText("Ingrese el nombre del producto...");
-            txtNombreProducto.setForeground(Color.GRAY);
-        }
-    }
-});
-    
+            @Override
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                if (txtNombreProducto.getText().trim().isEmpty()) {
+                    txtNombreProducto.setText("Ingrese el nombre del producto...");
+                    txtNombreProducto.setForeground(Color.GRAY);
+                }
+            }
+        });
+
         lblnroSerie.setText("nro Serie");
         lblnroSerie.setForeground(Color.GRAY);
-
         lblnroSerie.addFocusListener(new java.awt.event.FocusAdapter() {
-    @Override
-    public void focusGained(java.awt.event.FocusEvent evt) {
-        if (lblnroSerie.getText().equals("nro Serie")) {
-            lblnroSerie.setText("");
-            lblnroSerie.setForeground(Color.BLACK);
-        }
-    }
+            @Override
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                if (lblnroSerie.getText().equals("nro Serie")) {
+                    lblnroSerie.setText("");
+                    lblnroSerie.setForeground(Color.BLACK);
+                }
+            }
 
-    @Override
-    public void focusLost(java.awt.event.FocusEvent evt) {
-        if (lblnroSerie.getText().trim().isEmpty()) {
-            lblnroSerie.setText("nro Serie");
-            lblnroSerie.setForeground(Color.GRAY);
-        }
-    }
-});
-        
+            @Override
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                if (lblnroSerie.getText().trim().isEmpty()) {
+                    lblnroSerie.setText("nro Serie");
+                    lblnroSerie.setForeground(Color.GRAY);
+                }
+            }
+        });
+
         lblnroVenta.setText("nro Venta");
         lblnroVenta.setForeground(Color.GRAY);
-
         lblnroVenta.addFocusListener(new java.awt.event.FocusAdapter() {
-    @Override
-    public void focusGained(java.awt.event.FocusEvent evt) {
-        if (lblnroVenta.getText().equals("nro Venta")) {
-            lblnroVenta.setText("");
-            lblnroVenta.setForeground(Color.BLACK);
-        }
+            @Override
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                if (lblnroVenta.getText().equals("nro Venta")) {
+                    lblnroVenta.setText("");
+                    lblnroVenta.setForeground(Color.BLACK);
+                }
+            }
+
+            @Override
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                if (lblnroVenta.getText().trim().isEmpty()) {
+                    lblnroVenta.setText("nro Venta");
+                    lblnroVenta.setForeground(Color.GRAY);
+                }
+            }
+        });
     }
 
-    @Override
-    public void focusLost(java.awt.event.FocusEvent evt) {
-        if (lblnroVenta.getText().trim().isEmpty()) {
-            lblnroVenta.setText("nro Venta");
-            lblnroVenta.setForeground(Color.GRAY);
-        }
-    }
-});
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    }
 
-    
-    
-    
-    
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
